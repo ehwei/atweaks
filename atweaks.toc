@@ -7,3 +7,6 @@
 atweaks.lua
 slashcommands.lua
 pvptweaks.lua
+showgrid.lua
+queuetimer.lua
+statustext.lua

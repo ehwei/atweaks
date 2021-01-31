@@ -7,12 +7,14 @@ SlashCmdList["TOUT"] = function() LFGTeleport(true) end
 SlashCmdList["TIN"] = function() LFGTeleport() end
 SlashCmdList["TELE"] = function() LFGTeleport(IsInInstance()) end
 SlashCmdList["GREATVAULT"] = function() LoadAddOn("Blizzard_WeeklyRewards"); local wrf=WeeklyRewardsFrame if wrf:IsVisible() then wrf:Hide() else wrf:Show() end end
-SlashCmdList["SOULBINDVIEW"] = function() LoadAddOn("Blizzard_Soulbinds"); local sbf=SoulbindViewer if sbf:IsVisible() then sbf:Hide() else sbf:Open() end end
+SlashCmdList["SOULBINDVIEW"] = function() LoadAddOn("Blizzard_Soulbinds") local sbf=SoulbindViewer if sbf:IsVisible() then sbf:Hide() else sbf:Open() end end
 SlashCmdList["RELOADSAY"] = function() if IsInGroup() then SendChatMessage("reloading", "INSTANCE_CHAT") end ReloadUI() end
 -- SlashCmdList["RELOADSAY"] = function() if IsInGroup() then SendChatMessage("reloading", IsInRaid() and "RAID" or IsInGroup() and "PARTY" or IsInInstance() and "INSTANCE_CHAT") end ReloadUI() end
 SlashCmdList["INVJAMIE"] = function() SendChatMessage("123", "WHISPER", nil, "Luckerdog"); SendChatMessage("123", "WHISPER", nil, "Shouldbeokay") end
 -- SlashCmdList["SURRENDERARENA"] = function() SurrenderArena() end
-SlashCmdList["SURRENDERARENA"] = function() local U=UnitIsDeadOrGhost if U("player")or GetBattlefieldWinner()then LeaveBattlefield()elseif IsActiveBattlefieldArena()then for i=1,4 do if U("party"..i)then SurrenderArena()return end end ConfirmSurrenderArena()end
+SlashCmdList["SURRARENA"] = function() local U=UnitIsDeadOrGhost if U("player")or GetBattlefieldWinner()then LeaveBattlefield()elseif IsActiveBattlefieldArena()then for i=1,4 do if U("party"..i)then SurrenderArena()return end end ConfirmSurrenderArena()end end
+SlashCmdList["ADDONS"] = function() InterfaceOptionsFrame_Show();InterfaceOptionsFrameTab2:Click() end
+
 
 SLASH_READYCHECK1   = "/rc"
 SLASH_LEAVEGROUP1   = "/lg" -- leave group
@@ -23,4 +25,5 @@ SLASH_GREATVAULT1   = "/gv" -- open weekly vault
 SLASH_SOULBINDVIEW1 = "/sb"
 SLASH_RELOADSAY1    = "/rls" -- sends 'reloading' to relevant chat before reloading
 SLASH_INVJAMIE1     = "/123" -- sends 123 to jamie
-SLASH_SURRENDERARENA1 = "/ff" 
+SLASH_SURRARENA1    = "/ff"
+SLASH_ADDONS1       = "/addons"

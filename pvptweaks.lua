@@ -92,7 +92,7 @@ local totemNpcIDs = {
 
 local function CreateIcon(nameplate)
     local totemf = CreateFrame("Frame", nil, nameplate)
-    totemf:SetSize(63, 63)
+    totemf:SetSize(33, 33)
     totemf:SetPoint("BOTTOM", nameplate, "TOP", 0, 5)
 
     local icon = totemf:CreateTexture(nil, "ARTWORK")

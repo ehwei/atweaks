@@ -9,4 +9,5 @@ slashcommands.lua
 pvptweaks.lua
 showgrid.lua
 queuetimer.lua
-statustext.lua
+# statustext.lua
+ldb-latency.lua

@@ -10,4 +10,5 @@ pvptweaks.lua
 showgrid.lua
 queuetimer.lua
 # statustext.lua
-ldb-latency.lua
+ldb-modules\performance.lua
+ldb-modules\location.lua

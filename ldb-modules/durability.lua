@@ -2,13 +2,13 @@ local db_dura = CreateFrame("Frame", "atDurability_Text")
 db_dura.obj = LibStub("LibDataBroker-1.1"):NewDataObject("atDurability", {type = "data source", text = "datadura", label = "|cffFFD100Durability: |r"})
 
 
-local function color(durability)
+local function color(text, durability)
     if durability == 0 then
-        return string.format("|cffff0000"..string.format("%.0f%%", durability).."|r") -- #ff0000
+        return string.format("|cffff0000"..text.."%|r") -- #ff0000
     elseif durability > 0 and durability <= 25 then
-        return string.format("|cffFFD100"..string.format("%.0f%%", durability).."|r") -- #ffd100
+        return string.format("|cffFFD100"..text.."%|r") -- #ffd100
     elseif durability > 25 then
-        return string.format("|cff00FF00"..string.format("%.0f%%", durability).."|r") -- #00FF00
+        return string.format("|cff00FF00"..text.."%|r") -- #00FF00
     end
 end
 
@@ -35,8 +35,8 @@ db_dura:SetScript("OnEvent", function(self)
         maximum = maximum + (m or 0)
     end
 
-    -- self.obj.text = ("%.0f%%"):format(durability / maximum * 100)
-    self.obj.text = color(durability / maximum * 100)
+    self.obj.text = color(("%.0f%%"):format(durability / maximum * 100), durability)
+    -- self.obj.text = color(durability / maximum * 100)
 
 end)
 

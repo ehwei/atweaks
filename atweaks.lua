@@ -75,6 +75,19 @@ g:SetScript("OnEvent", function()
     end
   end
 end)
+
+----------------------------------------------------------------------
+-- Custom Fonts
+----------------------------------------------------------------------
+
+-- local EventFrame = CreateFrame("Frame")
+-- EventFrame:RegisterEvent("VARIABLES_LOADED")
+-- EventFrame:SetScript("OnEvent", function(_, event)
+--
+--    SetCVar ("nameplateSelfTopInset", .55)
+--    SetCVar("nameplateSelfAlpha", 1)
+--
+-- end)
 ----------------------------------------------------------------------
 -- Custom Fonts
 ----------------------------------------------------------------------

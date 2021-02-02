@@ -24,7 +24,7 @@ local function color(location)
 end
 
 local function getcoords()
-	CTimerAfter(1, coords)
+	CTimerAfter(1, getcoords)
 	local map = C_Map.GetBestMapForUnit("player")
 	if map then
 		local position = C_Map.GetPlayerMapPosition(map, "player")

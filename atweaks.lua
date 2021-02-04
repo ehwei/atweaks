@@ -170,7 +170,29 @@ end
 -- MainMenuBarArtFrame.RightEndCap:Hide();
 --      MainMenuBarArtFrameBackground:Hide()
 
-
+--
+-- SetCVar("emphasizeMySpellEffects", 10)
+-- SetCVar("TargetPriorityCombatLock", 2)
+-- SetCVar("TargetPriorityCombatLockHighlight", 1)
+-- SetCVar("TargetPriorityPVP", 3)
+-- SetCVar("stopAutoAttackOnTargetChange", 1)
+-- SetCVar("Sound_EnableErrorSpeach", 0)
+-- SetCVar("autoLootDefault", 1)
+-- SetCVar("cameraDistanceMaxZoonFactor", 2.6)
+-- SetCVar("checkAddonVersion", 0)
+-- SetCvar("ffxDeath", 0)
+-- SetCvar("ffxGlow", 0)
+-- SetCVar("gxMaxFrameLatency", 5)
+-- SetCvar("PreemptiveCastEnable", 1)
+-- SetCvar("projectedTextures", 1)
+-- SetCvar("screenshotQuality", 10)
+-- SetCvar("ShakeStrengthCamera", 0)
+-- SetCvar("ShakeStrengthUI", 0)
+-- SetCvar("SpellQueueWindow", 80)
+-- SetCVar("threatShowNumberic", 1)
+-- SetCVar("TurnSpeed", 260)
+-- SetCVar("useHighResolutionUITextures", 1)
+-- SetCVar("ViolenceLevel", 100)
 
 ----------------------------------------------------------------------
 -- Update Keybindings

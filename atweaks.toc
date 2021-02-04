@@ -11,6 +11,7 @@ showgrid.lua
 queuetimer.lua
 # statustext.lua
 ldb-modules\performance.lua
-ldb-modules\location.lua
+# ldb-modules\location.lua
 ldb-modules\durability.lua
 ldb-modules\details.lua
+SSS

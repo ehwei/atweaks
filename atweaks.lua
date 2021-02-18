@@ -18,6 +18,16 @@
 -- aEvt:RegisterEvent("PLAYER_LOGIN")
 
 ----------------------------------------------------------------------
+-- Accept party invites from friends
+----------------------------------------------------------------------
+
+
+----------------------------------------------------------------------
+-- Quest dialog
+----------------------------------------------------------------------
+
+
+----------------------------------------------------------------------
 -- Press enter to delete rare items
 ----------------------------------------------------------------------
 StaticPopupDialogs["DELETE_ITEM"].enterClicksFirstButton = 1
@@ -75,40 +85,6 @@ g:SetScript("OnEvent", function()
     end
   end
 end)
-
-----------------------------------------------------------------------
--- Custom Fonts
-----------------------------------------------------------------------
-
--- local EventFrame = CreateFrame("Frame")
--- EventFrame:RegisterEvent("VARIABLES_LOADED")
--- EventFrame:SetScript("OnEvent", function(_, event)
---
---    SetCVar ("nameplateSelfTopInset", .55)
---    SetCVar("nameplateSelfAlpha", 1)
---
--- end)
-----------------------------------------------------------------------
--- Custom Fonts
-----------------------------------------------------------------------
--- UNIT_NAME_FONT     = "Interface\\AddOns\\DTweaks\\DTweaks.ttf"
--- DAMAGE_TEXT_FONT   = "Interface\\AddOns\\DTweaks\\DTweaks.ttf"
--- STANDARD_TEXT_FONT = "Interface\\AddOns\\DTweaks\\DTweaks.ttf"
-
-----------------------------------------------------------------------
--- Default Nameplate fonts
-----------------------------------------------------------------------
-
--- --  Nametag font size
--- local function SetFont(obj,optSize)
---     local fontName=obj:GetFont()
---     obj:SetFont(fontName,optSize,"THINOUTLINE")
--- end
---
--- SetFont(SystemFont_LargeNamePlate,12)
--- SetFont(SystemFont_NamePlate,12)
--- SetFont(SystemFont_LargeNamePlateFixed,12)
--- SetFont(SystemFont_NamePlateFixed,12)
 
 ----------------------------------------------------------------------
 -- Hide talking head frame
